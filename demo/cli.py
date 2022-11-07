@@ -5,9 +5,11 @@
 import click
 from summarize import summarize, search_wiki, get_wiki_text
 
+
 @click.group()
 def cli():
     """Summarize text from Wikipedia articles"""
+
 
 @cli.command("summarize")
 @click.argument("search_term")
@@ -26,6 +28,7 @@ def summarize_cli(search_term):
     print("=" * 80)
     print(summary)
     print("=" * 80)
+
 
 if __name__ == "__main__":
     cli()

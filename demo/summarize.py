@@ -3,6 +3,7 @@
 from transformers import pipeline
 import wikipedia
 
+
 def summarize(text):
     """Summarize text"""
     summarizer = pipeline("summarization", model="t5-small")
